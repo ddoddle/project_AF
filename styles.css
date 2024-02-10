@@ -305,7 +305,7 @@ nav {
 header {
   min-height: 100vh;
   background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(image1.jpg) center/cover no-repeat;
+    url(image4.jpg) center/cover no-repeat;
 }
 .banner {
   min-height: 100vh;
@@ -340,8 +340,6 @@ header {
 #services,
 #tours {
   height: 80vh;
-  
-  
 }
 
 
@@ -442,15 +440,8 @@ header {
   width: 10rem;
 }
 }
-/* Media query for Samsung Flip */
-@media (min-width: 600px) {
-  #about,
-  #services,
-  #tours {
-    height: 80vh;
-    height: 500px; /* Set your desired height */
-  }
-}
+
+
 
 
 /* Extra small devices (phones, 320px and up) */
@@ -459,7 +450,7 @@ header {
   #services,
   #tours {
     height: 80vh;
-    min-height: 450px; /* Minimum height */
+    min-height: 660px; /* Minimum height */
     max-height: 500px; /* Maximum height */
   }
 }
@@ -470,7 +461,7 @@ header {
   #services,
   #tours {
     height: 80vh;
-    min-height: 450px; /* Minimum height */
+    min-height: 690px; /* Minimum height */
     max-height: 600px; /* Maximum height */
   }
 }
@@ -481,8 +472,8 @@ header {
   #services,
   #tours {
     height: 80vh;
-    min-height: 550px; /* Minimum height */
-    max-height: 700px; /* Maximum height */
+    min-height: 560px; /* Minimum height */
+    max-height: 500px; /* Maximum height */
   }
 }
 
@@ -507,43 +498,27 @@ header {
     max-height: 1000px; /* Maximum height */
   }
 }
+@media (max-width: 375px) {
+  #about,
+  #services,
+  #tours {
+    height: 80vh;
+    min-height: 760px; /* Minimum height */
+    max-height: 400px; /* Maximum height */
+  }
+}
+@media (max-width: 314px) {
+  #about,
+  #services,
+  #tours {
+    height: 80vh;
+    min-height: 800px; /* Minimum height */
+    max-height: 400px; /* Maximum height */
+  }
+}
 
-@media (max-width: 575px) {
-  #about,
-  #services,
-  #tours {
-    height: 80vh;
-    min-height: 500px; /* Minimum height */
-    max-height: 450px; /* Maximum height */
-  }
-}
-@media (max-width: 413px) {
-  #about,
-  #services,
-  #tours {
-    height: 80vh;
-    min-height: 570px; /* Minimum height */
-    max-height: 450px; /* Maximum height */
-  }
-}
-@media (max-width: 351px) {
-  #about,
-  #services,
-  #tours {
-    height: 80vh;
-    min-height: 650px; /* Minimum height */
-    max-height: 450px; /* Maximum height */
-  }
-}
-@media (max-width: 318px) {
-  #about,
-  #services,
-  #tours {
-    height: 80vh;
-    min-height: 700px; /* Minimum height */
-    max-height: 450px; /* Maximum height */
-  }
-}
+
+
 
 
 #services {
