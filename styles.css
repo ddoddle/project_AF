@@ -1,4 +1,3 @@
-
 /*
 =============== 
 Fonts
@@ -69,6 +68,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 body {
   font-family: var(--ff-secondary);
@@ -76,9 +76,6 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 ul {
   list-style-type: none;
@@ -201,6 +198,7 @@ Scroll
 nav {
   background: var(--clr-white);
   padding: 1rem 1.5rem;
+  z-index: 1;
 }
 /* fixed nav */
 .fixed-nav {
@@ -307,6 +305,7 @@ header {
   background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
     url(image4.jpg) center/cover no-repeat;
 }
+
 .banner {
   min-height: 100vh;
   display: grid;
@@ -339,18 +338,18 @@ header {
 #about,
 #services,
 #tours {
-  height: 80vh;
+  height: 100%;
 }
-
-
+#about{
+  padding: 50px;
+}
 
 .about {
   background: rgb(224, 251, 222);
-  background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgba(63, 208, 212, 0.5) 100%);
-  padding: 50px 0 20px 0;
+  background: linear-gradient(360deg, rgb(134, 144, 134) 0%,rgba(110, 212, 216, 0.5) 100%);
+  padding: 20px 0 20px 0;
   text-align: center;
 
-  
 }
 
 .about h1 {
@@ -391,7 +390,7 @@ header {
   margin: 0 2rem;
   text-align: justify;
 }
-
+ 
 .about-info button {
   border: none;
   outline: 0;
@@ -399,7 +398,7 @@ header {
   margin: 2rem;
   font-size: 1rem;
   color: white;
-  background-color: var(--clr-primary-5);
+  background-color: var(--clr-primary-2);
   text-align: center;
   cursor: pointer;
   width: 15rem;
@@ -407,124 +406,223 @@ header {
 }
 
  .about-info button:hover {
-  background-color: var(--clr-primary-5);
+  background-color: var(--clr-primary-8);
 }
 
-@media (max-width: 768px) {
-  
-.about h1 {
-  font-size: 2rem;
+@media screen and (max-width: 768px) {
+  #about {
+    height: 100%; /* Adjust height as needed for smaller screens */
+  }
+
+  .about h1 {
+    font-size: 2rem;
 }
 
 .about p {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 .about-info {
-  flex-direction: column;
-  text-align: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .about-img {
-  width: 60%;
-  height: 60%;
-  margin-bottom: 1rem;
+    width: 60%;
+    height: 60%;
+    margin-bottom: 1rem;
 }
 
 .about-info p {
-  margin: 1rem 2rem;
+    margin: 1rem 2rem;
 }
 
 .about-info button {
-  margin: 1rem 2rem;
-  width: 10rem;
+    margin: 1rem 2rem;
+    width: 10rem;
 }
 }
 
 
+/* Team section */
+ 
+.team {
+    padding: 70px 0;
+    text-align: center;
+    background: linear-gradient(360deg, rgb(64, 71, 64) 0%,rgba(7, 104, 107, 0.5) 100%);
 
+}
+ 
+.team h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+ 
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 50px;
+   
+}
+ 
+.card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 18rem;
+    height: 25rem;
+    margin-top: 10px;
+    
+}
+ 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    
+}
+ 
+.card-img {
+    width: 18rem;
+    height: 12rem;
+}
+ 
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+ 
+.card-info button {
+    margin: 2rem 1rem;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--clr-primary-2);
+    text-align: center;
+    cursor: pointer;
+    /* width: 15rem; */
+    border-radius: 4px;
+}
+ 
+.card-name {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+ 
+.card-role {
+    font-size: 1rem;
+    color: #888;
+    margin: 5px 0;
+}
+ 
+.card-email {
+    font-size: 1rem;
+    color: #555;
+}
 
-/* Extra small devices (phones, 320px and up) */
-@media (min-width: 320px) and (max-width: 575px) {
-  #about,
-  #services,
-  #tours {
-    height: 80vh;
-    min-height: 660px; /* Minimum height */
-    max-height: 500px; /* Maximum height */
+@media screen and (max-width: 768px) {
+  .card-email {
+      font-size: 0.8rem; /* Adjust the font size for smaller screens */
   }
+ 
 }
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) {
-  #about,
-  #services,
-  #tours {
-    height: 80vh;
-    min-height: 690px; /* Minimum height */
-    max-height: 600px; /* Maximum height */
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-  #about,
-  #services,
-  #tours {
-    height: 80vh;
-    min-height: 560px; /* Minimum height */
-    max-height: 500px; /* Maximum height */
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) {
-  #about,
-  #services,
-  #tours {
-    height: 80vh;
-    min-height: 500px; /* Minimum height */
-    max-height: 800px; /* Maximum height */
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  #about,
-  #services,
-  #tours {
-    height: 80vh;
-    min-height: 500px; /* Minimum height */
-    max-height: 1000px; /* Maximum height */
-  }
-}
-@media (max-width: 375px) {
-  #about,
-  #services,
-  #tours {
-    height: 80vh;
-    min-height: 760px; /* Minimum height */
-    max-height: 400px; /* Maximum height */
-  }
-}
-@media (max-width: 314px) {
-  #about,
-  #services,
-  #tours {
-    height: 80vh;
-    min-height: 800px; /* Minimum height */
-    max-height: 400px; /* Maximum height */
-  }
-}
-
-
-
-
 
 #services {
   background: var(--clr-white);
- 
-}
+  font-family: 'Poppins', sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  background-image: url( image1.jpg); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-color: var( --clr-grey-1); 
+  background-blend-mode: multiply; 
+  background-position: center; 
+  color: #fff; 
+} 
+
+
+.services-container h1, 
+h3 { 
+  text-align: center; 
+  text-transform: uppercase; 
+} 
+
+.services-container h1 { 
+  position: relative; 
+  max-width: max-content; 
+  margin: 2rem auto 5rem auto; 
+} 
+
+.services-container h1::after { 
+  content: ""; 
+  position: absolute; 
+  width: 75%; 
+  height: 5px; 
+  background-color: hsl(120, 73%, 75%); 
+  bottom: -2rem; 
+  left: 25px; 
+} 
+
+.services-container i { 
+  font-size: 3rem; 
+  color: lightgreen; 
+  padding: 1rem; 
+  transition: all 0.3s linear; 
+  transform: rotate(-45deg); 
+} 
+
+.services-container { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+} 
+
+.service-card { 
+  cursor: pointer; 
+  width: 300px; 
+  margin: 20px; 
+  padding: 2rem 20px 20px 20px; 
+  text-align: center; 
+  border-radius: 5px; 
+  transition: all 0.3s ease-in-out; 
+} 
+
+.icon-container { 
+  border: 2px solid lightgreen; 
+  transition: 0.3s linear; 
+  width: max-content; 
+  margin: 0 auto; 
+  transform: rotate(45deg); 
+} 
+
+.service-card:hover { 
+  box-shadow: 0 0 30px 0 lightgreen; 
+  transform: scale(1.1); 
+} 
+
+.service-card a { 
+  color: lightgreen; 
+  text-decoration: none; 
+} 
+
+@media (max-width: 768px) { 
+  .service-card { 
+      width: 100%; 
+  } 
+} 
+
+
 footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
@@ -574,4 +672,3 @@ footer p {
 
 
 
-    

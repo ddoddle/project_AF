@@ -1,114 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>webstie</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    />
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header id="home">
-      <!-- navbar -->
-      <nav id="nav">
-        <div class="nav-center">
-          <!-- nav header -->
-          <div class="nav-header">
-            <img src="./logo.svg" class="logo" alt="logo" />
-            <button class="nav-toggle">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
-          <!-- links -->
-          <div class="links-container">
-            <ul class="links">
-              <li>
-                <a href="#home" class="scroll-link">home</a>
-              </li>
-              <li>
-                <a href="#about" class="scroll-link">about</a>
-              </li>
-              <li>
-                <a href="#services" class="scroll-link">services</a>
-              </li>
-              <li>
-                <a href="#tours" class="scroll-link">tours</a>
-              </li>
-            </ul>
-          </div>
+<body>
+  <header id="home">
+    <!-- navbar -->
+    <nav id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./logo.svg" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-      </nav>
-      <!-- banner -->
-      <div class="banner">
-        <div class="container">
-          <h1>scroll project</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
-            neque sunt in? Id, necessitatibus quos quisquam distinctio
-            laudantium fugiat?
-          </p>
-          <a href="#tours" class="scroll-link btn btn-white">explore tours</a>
+        <!-- links -->
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#home" class="scroll-link">home</a>
+            </li>
+            <li>
+              <a href="#about" class="scroll-link">about</a>
+            </li>
+            <li>
+              <a href="#services" class="scroll-link">services</a>
+            </li>
+            <li>
+              <a href="#tours" class="scroll-link">tours</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
-    <!-- about -->
-    <section id="about" class="section about">
-      <div class="title">
-        <h2>about <span>us</span></h2>
+    </nav>
+    <!-- banner -->
+    <div class="banner">
+      <div class="container">
+        <h1>Marketing</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
+          neque sunt in? Id, necessitatibus quos quisquam distinctio
+          laudantium fugiat?
+        </p>
+        <a href="#tours" class="scroll-link btn btn-white">explore tours</a>
+      </div>
+    </div>
+  </header>
+  <!-- about -->
+
+  <section id="about" class="section about">
+    <div class="title">
+      <h2>about <span>us</span></h2>
         <p style="font-weight: bold">
-          
-          Lorem ipsum dolor sit amet consectetur adipisicing....
-          </p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing....
+        </p>
         <div class="about-info">
             <div class="about-img">
-                <img src=
-"image1.jpg" alt="Geeksforgeeks">
+                <img src="image1.jpg" alt="image">
             </div>
             <div>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quidem mollitia eum delectus recusandae fuga numquam? Maiores sapiente dolor laborum ipsum voluptatum. Corrupti.
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eum, sed nihil alias labore, veritatis error ratione repudiandae adipisci reprehenderit esse consequuntur vitae minus neque iusto debitis fugit ab magnam!
-            </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero minus accusantium modi illo voluptate. Possimus distinctio autem iusto harum quo ab expedita cumque, maxime consequuntur nisi veniam nemo ipsa ea dolorem non ut ipsum tenetur quia corporis aliquid? Qui ratione cumque nulla recusandae repellat voluptas officia est corporis reiciendis dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam nostrum tenetur sunt dolore culpa omnis at. Placeat explicabo voluptatum illo consequuntur! Dolor, consectetur.
+                </p>
                 <button>Read More...</button>
             </div>
         </div>
+    </div>
+  </section>
 
-      </div>
-    </section>
-    <!-- services -->
-    <section id="services" class="section">
-      <div class="title">
-        <h2>our <span>services</span></h2>
-      </div>
-    </section>
-    <!-- contact -->
-    <section id="tours" class="section">
-      <div class="title">
-        <h2>featured <span>tours</span></h2>
-      </div>
-    </section>
-    <!-- footer -->
-    <footer class="section">
-      <p>
-        copyright &copy; backroads travel tours company
-        <span id="date"></span>. all rights reserved
-      </p>
-    </footer>
-    <a class="scroll-link top-link" href="#home">
-      <i class="fas fa-arrow-up"></i>
-    </a>
-    <!-- javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-  </body>
+  <!-- Team Section -->
+  <section class="team">
+    <h1>Meet Our Team</h1>
+    <div class="team-cards">
+       
+        <!-- Cards here -->
+        <!-- Card 1 -->
+       
+        <div class="card">
+            <div class="card-img">
+                <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230824122630/
+business-office-business-woman-professional.jpg" alt="User 1">
+            </div>
+            <div class="card-info">
+                <h2 class="card-name">Jane</h2>
+                <p class="card-role">CEO and Founder</p>
+                <p class="card-email">jane@example.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+       
+        <div class="card">
+            <div class="card-img">
+                <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230822183347/
+man-portrait-businessman-male.jpg" alt="User 2">
+            </div>
+            <div class="card-info">
+                <h2 class="card-name">Miller</h2>
+                <p class="card-role">Co-Founder</p>
+                <p class="card-email">Miller@example.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+       
+        <!-- Card 3 -->
+       
+        <div class="card">
+            <div class="card-img">
+                <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230824122630/
+business-office-business-woman-professional.jpg" alt="User 3">
+            </div>
+            <div class="card-info">
+                <h2 class="card-name">Joe</h2>
+                <p class="card-role">Co-Founder</p>
+                <p class="card-email">Joe@example.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- services -->
+   <section id="services" class="section">
+    <div class="title" >
+      <h2>our <span>services</span></h2>
+    </div>
+    <div class="services-container"> 
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-user"></i> 
+            </div> 
+            <h3>Service 1</h3> 
+            <p> 
+                
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in facilis nam ex exercitationem nihil repellendus. Doloribus praesentium natus perspiciatis quaerat aut quam qui iure, nobis cupiditate obcaecati totam enim dicta quae sint similique quisquam maxime molestias autem amet vel officia non et dolore? Aperiam reiciendis odit minus perferendis! Modi!</p> 
+            <a href="#" class="button">Learn More</a> 
+        </div> 
+  
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-cart-shopping"></i> 
+            </div> 
+            <h3>Service 2</h3> 
+            <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laudantium nisi, ex beatae soluta animi sint odio! Deserunt minima quibusdam accusantium sit sapiente? Dignissimos, voluptatum suscipit voluptatibus quae odio temporibus impedit officia, illo vero dolore, ad provident adipisci corrupti? Excepturi animi quasi exercitationem assumenda fugit aliquam tempore illum ad pariatur!</p> 
+            <a href="#" class="button">Learn More</a> 
+        </div> 
+  
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-toolbox"></i> 
+            </div> 
+            <h3>Service 3</h3> 
+            <p> 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic praesentium quia aliquam, iure incidunt laborum qui soluta quis vero dicta est voluptas, alias in exercitationem voluptates numquam vitae deserunt ut distinctio nihil nesciunt rerum quod tempore. Dolorem vitae fugiat temporibus dolorum, quidem eaque possimus voluptatum fugit corporis impedit id ab!</p> 
+            <a href="#" class="button">Learn More</a> 
+        </div> 
+  
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-brands fa-android"></i> 
+            </div> 
+            <h3>Service 4</h3> 
+            <p> 
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis possimus corrupti ducimus magni quidem maiores, itaque laudantium commodi ex. Nihil vero cum in blanditiis dicta, dolor harum. Excepturi nulla autem necessitatibus facilis iste, facere blanditiis vel, repellendus doloremque nostrum fugit. Voluptas, rem. Officiis, minus eveniet soluta voluptatum dolorum dolore!</p> 
+            <a href="#" class="button">Learn More</a> 
+        </div> 
+  
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-database"></i> 
+            </div> 
+            <h3>Service 5</h3> 
+            <p> 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptates corrupti omnis, laboriosam ducimus, fuga delectus sit atque quo amet cum debitis. Vero nemo iste doloremque pariatur veniam ipsum sunt nesciunt qui molestiae, dolores, consequuntur fugiat magni suscipit officiis fugit facilis veritatis tempore nihil similique consectetur voluptate itaque reiciendis. Nisi!</p> 
+            <a href="#" class="button">Learn More</a> 
+        </div> 
+  
+        <div class="service-card"> 
+            <div class="icon-container"> 
+                <i class="fa-solid fa-pen"></i> 
+            </div> 
+            <h3>Service 6</h3> 
+            <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veniam deleniti blanditiis quia in recusandae enim nobis magnam iure consequuntur fuga voluptatem illo provident, atque non possimus architecto! Ipsam assumenda maiores temporibus sint commodi consequuntur incidunt similique explicabo adipisci repellat id iusto eaque, aliquid qui eum minima voluptate a veniam.</p> 
+            <a href="#" class="button">Learn More</a> 
+        </div> 
+    </div> 
+  </section>
+
+  
+  <!-- contact -->
+  <section id="tours" class="section">
+    <div class="title">
+      <h2>featured <span>tours</span></h2>
+    </div>
+    
+  </section>
+  <!-- footer -->
+  <footer class="section">
+    <p>
+      copyright &copy; backroads travel tours company
+      <span id="date"></span>. all rights reserved
+    </p>
+  </footer>
+  <a class="scroll-link top-link" href="#home">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
 </html>
-
-      

@@ -1,3 +1,4 @@
+
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
 
@@ -75,3 +76,9 @@ scrollLinks.forEach((link) => {
   });
 });
 // calculate heights
+
+
+
+
+
+
